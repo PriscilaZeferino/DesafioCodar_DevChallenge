@@ -1,43 +1,118 @@
-/*Reset*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html {
-    font-size: 62.5%;
-  }
-  body {
-    font-size: 1.6rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-  }
-  ul,
-  ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  a {
-    text-decoration: none;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  button,
-  input {
-    border: 0;
-  }
-  
-  button:focus,
-  input:focus {
-    border: 0;
-  }
+    /*variáveis e imports*/
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
+    
+    :root {
+        --primary-color: #D6000D;
+        --button-color: #D6000D;
+        --white: #f2f2f2;
+        --black: #000;
+        --hover: #D6000D;
+    }
+
+    /*Reset*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html {
+        font-size: 62.5%;
+    }
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-family: 16px;
+        font-weight: 400;
+        font-size: 1.6rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+    }
+    ul,
+    ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    
+    button,
+    input {
+        border: 0;
+    }
+    
+    button:focus,
+    input:focus {
+        border: 0;
+    }
+
+    /*Page Styles*/
+
+
+    /*Rodapé*/
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--black);
+        color: var(--white);
+        padding-top: 10rem;
+        padding-bottom: 15rem;
+    }
+
+    footer span:first-child h1 {
+        font-size: 64px;
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    footer span h1 {
+        font-size: 34px;
+        font-weight: 700;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    footer span p {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    footer span address {
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+
+    footer span address p:last-child {
+        text-decoration: underline;
+    }
+
+    footer span address a {
+        color: var(--white);
+    }
+
+    footer span address a:hover {
+        color: var(--hover);
+    }
+
+    footer span .social-media-icons {
+        display: flex;
+        justify-content: space-evenly;
+        color: var(--primary-color);
+    }
+
+
+    
