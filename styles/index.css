@@ -7,6 +7,9 @@
         --white: #f2f2f2;
         --black: #000;
         --hover: #D6000D;
+        --photo: #D6000D;
+        --gray: #727272;
+        --background-photo: #D4D4D4;
     }
 
     /*Reset*/
@@ -60,12 +63,74 @@
         border: 0;
     }
 
-    /*Page Styles*/
+    Page Styles
+    /* Menu
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
 
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .logo {
+        float: left;
+    }
+    
+    .logo h1 {
+        font-size: 46px;
+        font-weight: 700;
+        color: var(--primary-color);
+        text-align: left;
+    }
+
+ */
+
+    /*Comentários*/
+    .container-comments {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        margin: 5rem;
+        padding: 1rem;
+
+        padding-bottom: 5rem;
+    }
+
+    .comments {
+        background-color: var(--background-photo);
+        display: flex;
+        flex-direction: row;
+
+        border-radius: 12px;
+        padding: 5rem;
+        max-width: 610px;
+    }
+
+    .comments-descriptions h1, 
+    .comments-descriptions h3, 
+    .comments-descriptions p {
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: justify;
+    }
+
+    .comments-descriptions h1 {
+        padding-top: 2rem;
+    }
+
+    .photo {
+        width: 240px;
+        height: 130px;
+        border-radius: 100%;
+        background-color: var(--primary-color);
+    }
 
     /*Rodapé*/
     footer {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         background-color: var(--black);
         color: var(--white);
