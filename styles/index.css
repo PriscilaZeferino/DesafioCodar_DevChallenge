@@ -11,9 +11,11 @@
         --primary-color: #D6000D;
         --button-color: #D6000D;
         --photo: #D6000D;
-        --hover: #D6000D;
+        --primary-hover: #D6000D;
+        --second-hover: #f2f2f2;
 
-        --white: #f2f2f2;
+
+        --white: #fff;
         --black: #000;
 
 
@@ -53,7 +55,7 @@
         text-decoration: none;
     }
     img {
-        width: 45%;
+        width: 50%;
         max-width: 100%;
         height: auto;
         display: block;
@@ -63,6 +65,7 @@
     button,
     input {
         border: 0;
+        border-radius: 10px;
     }
     
     button:focus,
@@ -71,7 +74,7 @@
     }
     /* Page Styles
     /*Menu*/
-    /* nav ul {
+    nav ul {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -88,9 +91,50 @@
         font-weight: 700;
         color: var(--primary-color);
         text-align: left;
-    } */ 
+    } 
 
-    /*services*/
+    /*Orçamento*/
+    .budget {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin: 15rem;
+    }
+
+    .budget img {
+        width: 40%;
+        height: auto;
+    }
+
+    .budget p {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 16px;
+
+    }
+
+    .budget p:nth-child(2) {
+        color: var(--primary-color);
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    .budget button {
+        width: 300px;
+        height: 50px;
+        
+        background-color: var(--button-color);
+        color: var(--white);
+
+        margin-top: 36px;
+
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+
+    /*Serviços*/
     .services {
         margin: 15rem;
         font-size: 26px;
@@ -129,7 +173,7 @@
 
         width: 300px;
         height: 70px;
-
+        
         font-size: 20px;
         font-weight: 700;
 
@@ -222,13 +266,17 @@
     }
 
     footer span address a:hover {
-        color: var(--hover);
+        color: var(--primary-hover);
     }
 
     footer span .social-media-icons, footer span .social-media-icons a:visited {
         display: flex;
         justify-content: space-evenly;
         color: var(--primary-color);
+    }
+
+    footer span .social-media-icons a:hover {
+        color: var(--second-hover)
     }
 
 
