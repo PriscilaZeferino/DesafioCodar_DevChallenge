@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,60 +9,72 @@
     <script src="https://kit.fontawesome.com/4c5d387a2d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
+    <header role="banner">
+        <nav aria-label="Main Navigation" role="navigation">
             <ul>
                 <li class="logo"><h1>Codar.</h1></li>
-                <li>Início</li>
-                <li>Serviços</li>
-                <li>Contato</li>
-                <li>Login</li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Login</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="budget">
-            <img src="./assets/video_call.png" alt="">
-            <p>Alavanque seu negócio com um </p>
-            <p>Website incrível</p>
-            <button>Solicitar orçamento</button>
-        </div>
-        <div class="services">
-            <ul>
-                <li><img src="#" alt="" srcset="">Dominio personalizado</li>
-                <li><img src="#" alt="" srcset="">Hospedagem</li>
-                <li><img src="#" alt="" srcset="">Site responsivo</li>
-                <li><img src="#" alt="" srcset="">Redes sociais </li>
-                <li><img src="#" alt="" srcset="">Chat online </li>
-                <li><img src="#" alt="" srcset="">Blog integrado</li>
-            </ul>
-            <img src="./assets/coding_.png" alt="">
-            <p>Nossa equipe está à disposição!</p>
-            <span>
-                <input type="number" placeholder="Celular" name="celular-input" id="celular-input">
-                <button>Ligamos pra você</button>
-            </span>
-        </div>
-        <div class="container-comments">
-            <span class="comments">
-                <div class="photo"></div>
-                <div class="comments-descriptions">
-                    <p>Já tive experiências com outras 4 empresas da área e a Codar é sem sombra de dúvidas superior em todos os aspectos.</p>
-                    <h1>Pedro Ferreira</h1>
-                    <h3>Construtora Minari</h3>
-                </div>
-            </span>
-            <span class="comments">
-                <div class="photo"></div>
-                <div class="comments-descriptions">
-                    <p>Processos bem simples e criação de um site exatamente como a minha escola queria! </p>
-                    <h1>Maria Rita</h1>
-                    <h3>Escola Criança Feliz</h3>
-                </div>
-            </span>       
-        </div>
+    <main role="main">
+        <section>
+            <div class="budget">
+                <img src="./assets/video_call.png" alt="Pessoas em video chamada no notebook">
+                <p>Alavanque seu negócio com um </p>
+                <p>Website incrível</p>
+                <button>Solicitar orçamento</button>
+            </div>
+        </section>
+        <section>
+            <div class="services">
+                <span class="services-list">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i><span role="text">Domínio personalizado</span></li>
+                        <li><i class="fas fa-check-circle"></i><span role="text">Hospedagem</span></li>
+                        <li><i class="fas fa-check-circle"></i><span role="text">Site responsivo</span></li>
+                        <li><i class="fas fa-check-circle"></i><span role="text">Redes sociais</span></li>
+                        <li><i class="fas fa-check-circle"></i><span role="text">Chat Online</span></li>
+                        <li><i class="fas fa-check-circle"></i><span role="text">Blog integrado</span></li>
+                    </ul>
+                    <img src="./assets/coding_.png" alt="Mãos programando">    
+                    </span>
+                    <span class="services-team">
+                        <form action="#">
+                            <p>Nossa equipe está à disposição!</p>
+                            <span>
+                                <input type="number" placeholder="Celular" name="celular-input" id="celular-input">
+                                <button>Ligamos pra você</button>
+                            </span>
+                        </form>
+                    </span>
+            </div>
+        </section>
+        <section>
+            <div class="container-comments">
+                <span class="comments">
+                    <div class="photo"></div>
+                    <div class="comments-descriptions">
+                        <p>Já tive experiências com outras 4 empresas da área e a Codar é sem sombra de dúvidas superior em todos os aspectos.</p>
+                        <h1>Pedro Ferreira</h1>
+                        <h3>Construtora Minari</h3>
+                    </div>
+                </span>
+                <span class="comments">
+                    <div class="photo"></div>
+                    <div class="comments-descriptions">
+                        <p>Processos bem simples e criação de um site exatamente como a minha escola queria! </p>
+                        <h1>Maria Rita</h1>
+                        <h3>Escola Criança Feliz</h3>
+                    </div>
+                </span>       
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <span>
             <h1>Codar.</h1>
             <p>Criamos websites incríveis </p>
@@ -83,9 +95,9 @@
         <span>
             <h1>Redes Sociais</h1>
             <span class="social-media-icons">
-                <i class="fab fa-facebook-square fa-3x"></i>
-                <i class="fab fa-instagram fa-3x"></i>
-                <i class="fab fa-twitter-square fa-3x"></i>
+                <a href="https://facebook.com"><i class="fab fa-facebook-square fa-3x"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram fa-3x"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter fa-3x"></i></a>
             </span>
         </span>
     </footer>
