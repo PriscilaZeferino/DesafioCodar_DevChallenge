@@ -2,14 +2,21 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
     
     :root {
+
+        --primary-background: #f2f2f2;
+        --second-background: #727272;
+        --input-background: #DCDCDC;
+        --photo-background: #D4D4D4;
+        
         --primary-color: #D6000D;
         --button-color: #D6000D;
+        --photo: #D6000D;
+        --hover: #D6000D;
+
         --white: #f2f2f2;
         --black: #000;
-        --hover: #D6000D;
-        --photo: #D6000D;
-        --gray: #727272;
-        --background-photo: #D4D4D4;
+
+
     }
 
     /*Reset*/
@@ -45,8 +52,8 @@
     a {
         text-decoration: none;
     }
-
     img {
+        width: 45%;
         max-width: 100%;
         height: auto;
         display: block;
@@ -62,10 +69,9 @@
     input:focus {
         border: 0;
     }
-
-    Page Styles
-    /* Menu
-    nav ul {
+    /* Page Styles
+    /*Menu*/
+    /* nav ul {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -82,15 +88,58 @@
         font-weight: 700;
         color: var(--primary-color);
         text-align: left;
+    } */ 
+
+    /*services*/
+    .services {
+        margin: 15rem;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 5rem;
     }
 
- */
+    .services-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .services-list ul li .fa-check-circle{
+        justify-content: space-between;
+        color: var(--primary-color)
+    }
+
+    .services .services-team #celular-input{
+        background-color: var(--input-background);
+        color: var(--black);
+        border-radius: 10px;
+
+        width: 300px;
+        height: 70px;
+
+        padding-left: 2rem;
+        
+        font-size: 18px;
+    }
+
+    .services .services-team button {
+        background-color: var(--primary-color);
+        color: var(--white);
+        border-radius: 10px;
+
+        width: 300px;
+        height: 70px;
+
+        font-size: 20px;
+        font-weight: 700;
+
+    }
 
     /*Comentários*/
     .container-comments {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
 
         margin: 5rem;
         padding: 1rem;
@@ -99,13 +148,15 @@
     }
 
     .comments {
-        background-color: var(--background-photo);
+        background-color: var(--photo-background);
         display: flex;
         flex-direction: row;
 
         border-radius: 12px;
         padding: 5rem;
         max-width: 610px;
+        max-height: 610px;
+
     }
 
     .comments-descriptions h1, 
@@ -121,11 +172,12 @@
     }
 
     .photo {
-        width: 240px;
+        width: 230px;
         height: 130px;
         border-radius: 100%;
         background-color: var(--primary-color);
     }
+
 
     /*Rodapé*/
     footer {
@@ -173,7 +225,7 @@
         color: var(--hover);
     }
 
-    footer span .social-media-icons {
+    footer span .social-media-icons, footer span .social-media-icons a:visited {
         display: flex;
         justify-content: space-evenly;
         color: var(--primary-color);
