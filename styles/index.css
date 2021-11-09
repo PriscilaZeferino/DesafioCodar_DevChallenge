@@ -35,6 +35,12 @@
         font-family: 16px;
         font-weight: 400;
         font-size: 1.6rem;
+
+        /* width: 100vh;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
     }
 
     h1,
@@ -72,7 +78,8 @@
     input:focus {
         border: 0;
     }
-    /* Page Styles
+    /* Page Styles*/
+
     /*Menu*/
     nav ul {
         display: flex;
@@ -81,9 +88,18 @@
 
         font-size: 24px;
         font-weight: 400;
+
+        margin: 15rem;
+    }
+
+    nav ul li {
+        padding: 3rem;
+
     }
     .logo {
-        float: left;
+        display: flex;
+        flex-direction: row;
+        color: var(--primary-color);
     }
     
     .logo h1 {
@@ -92,6 +108,8 @@
         color: var(--primary-color);
         text-align: left;
     } 
+
+    
 
     /*Orçamento*/
     .budget {
@@ -103,7 +121,7 @@
     }
 
     .budget img {
-        width: 40%;
+        width: 50%;
         height: auto;
     }
 
@@ -111,7 +129,6 @@
         font-size: 24px;
         font-weight: 700;
         margin-top: 16px;
-
     }
 
     .budget p:nth-child(2) {
@@ -173,7 +190,7 @@
 
         width: 300px;
         height: 70px;
-        
+
         font-size: 20px;
         font-weight: 700;
 
